@@ -5,6 +5,8 @@
 
 package com.wizeline.springboot.otd;
 
+import java.util.Objects;
+
 /**
  * Class Description goes here.
  *
@@ -47,5 +49,9 @@ public class OTDPais {
         OTDPais otro = (OTDPais) obj;
         return this.nombre != null && this.poblacion != null && this.nombre.equals(otro.nombre)
                 && this.poblacion.equals(otro.poblacion);
+    }
+
+    @Override public int hashCode() {
+        return Objects.hash(nombre, poblacion);
     }
 }
