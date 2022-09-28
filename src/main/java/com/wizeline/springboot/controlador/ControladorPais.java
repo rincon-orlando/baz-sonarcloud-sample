@@ -44,4 +44,8 @@ public class ControladorPais {
 
         return ResponseEntity.ok(OTDPais);
     }
+
+    public boolean doNothing () {
+        return true;
+    }
 }
